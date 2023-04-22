@@ -1,0 +1,334 @@
+$blue-color: #5290EA
+$orange-color: #F28B64
+*
+    box-sizing: border-box
+@font-face 
+    font-family: "MontserratT"
+    src: url("../font/Montserrat-Regular.ttf")
+    font-weight: regular
+    font-style: normal
+
+@font-face 
+    font-family: "MontserratT"
+    src: url("../font/Montserrat-SemiBold.ttf")
+    font-weight: bold
+    font-style: normal
+html
+    font-family: "MontserratT"
+    font-weight: regular
+.title
+    font-weight: bold
+a
+    text-decoration: none
+    color: black
+
+.main-section
+    position: relative
+    min-height: 800px
+    background-color: #F0F0F0
+    padding-top: 16px
+    overflow: hidden
+    &__nav-container
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        height: 69px
+        align-items: center
+    &__content-container
+        display: flex
+        flex-direction: row
+        position: relative
+    &__first-elipse
+        position: absolute
+        top: 129px
+        right: 54px
+    &__second-elipse
+        position: absolute
+        top: 650px
+        right: -120px
+.container
+    max-width: 1140px 
+    margin: 0 auto
+.nav-menu
+    &__list
+        display: flex
+        flex-direction: row
+    &__list-item
+        margin-right: 64px
+        font-size: 18px
+        &:last-child
+            margin-right: 0px
+.left-wrapper
+    position: relative
+    img
+        z-index: 5
+        position: relative
+    &__rectangle-blue
+        z-index: 2
+        transform: rotate(295deg)
+        top: 158px
+        left: 0px
+        position: absolute
+        width: 565.95px
+        height: 220px
+        background-color: $blue-color
+        border-radius: 100px
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    &__rectangle-orange
+        z-index: 3
+        transform: rotate(319deg)
+        top: 225px
+        left: 53px
+        position: absolute
+        width: 565.95px
+        height: 220px
+        background-color: $orange-color
+        border-radius: 100px
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    &__rectangle-grey
+        z-index: 1
+        transform: rotate(339deg)
+        top: 267px
+        left: 95px
+        position: absolute
+        width: 565.95px
+        height: 220px
+        background-color: #000000
+        border-radius: 100px
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+.icons
+    display: flex
+    flex-direction: row
+    &__item
+        width: 40px
+        height: 40px
+        margin-right: 17px
+        &:last-child
+            margin-right: 0px
+.title
+    font-size: 72px
+    position: relative
+    &__hr
+        width: 65px
+        position: absolute
+        border: none
+        margin: 0
+        border-top: 1px solid black
+        &_second-sec
+            margin-top: 10px
+.right-wrapper
+    width: 372px
+    position: absolute
+    top: 150px
+    right: 76px
+    z-index: 10
+    &__title
+        margin-bottom: 10px
+    &__text
+        font-size: 18px
+        margin-bottom: 20px
+    &__icons-box
+        margin-bottom: 1px
+        padding-left: 10px
+    &__icon-btn
+        display: inline-flex
+.buttons
+    display: inline-flex
+    &__main-btn
+        margin-right: 32px
+        width: 200px
+        height: 60px
+        background: $orange-color
+        border: none
+        color: white
+        font-size: 20px
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+        border-radius: 100px
+    &__icon-btn
+        display: inline-flex
+        align-items: center
+        img
+            margin-right: 12px
+    &__text
+        font-size: 16px
+.elipse
+    width: 194px
+    height: 194px
+    background: linear-gradient(143.92deg, rgba(237, 123, 80, 0.5) 14.85%, rgba(72, 138, 234, 0.5) 53.25%, rgba(44, 44, 44, 0.5) 85.74%)
+    border-radius: 150px
+    display: flex
+    justify-content: center
+    align-items: center
+    &_big
+        width: 282px
+        height: 282px
+    &__subtract
+        width: 129.33px
+        height: 129.33px
+        background: #F0F0F0
+        border-radius: 150px
+        &_second-color
+            background: #FFFFFF
+        &_big
+            width: 188px
+            height: 188px
+.second-section
+    min-height: 680px
+    padding-top: 32px
+    position: relative
+    &__content-container
+        position: relative
+    &__title-box
+        height: 88px
+        margin-bottom: 40px
+    &__cards-box
+        display: flex
+        flex-direction: row
+        margin-bottom: 25px
+    &__card-grey
+        z-index: 1
+        width: 360px
+        height: 360px
+        background-color: #E2E2E2
+        margin-right: 30px
+        border-radius: 20px
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+        display: flex
+        flex-direction: row
+        position: relative
+        img
+            position: absolute
+            top: 25px
+            right: 175px
+        p
+            transform: rotate(90deg)
+            font-size: 38px
+            position: absolute
+            top: 154px
+            right: 15px
+            text-align: center
+    &__card-orange
+        position: relative
+        display: flex
+        flex-direction: row
+        width: 360px
+        height: 360px
+        background-color: $orange-color
+        margin-right: 30px
+        border-radius: 20px
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+        img
+            position: absolute
+            top: 25px
+            right: 175px
+        p
+            transform: rotate(90deg)
+            font-size: 38px
+            position: absolute
+            top: 154px
+            right: -25px
+            text-align: center
+    &__card-blue
+        z-index: 1
+        width: 360px
+        height: 360px
+        background-color: $blue-color
+        border-radius: 20px
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+        img
+            position: absolute
+            top: 25px
+            right: 155px
+        p
+            transform: rotate(90deg)
+            font-size: 38px
+            position: absolute
+            top: 154px
+            right: 10px
+            text-align: center
+    &__icons-box
+        display: flex
+        flex-direction: row
+        padding-left: 85px
+    &__icon
+        display: flex
+        flex-direction: row
+        margin-right: 60px
+        &:last-child
+            margin-right: 0px
+        img
+            margin-right: 20px
+        p
+            font-size: 18px
+            span
+                font-size: 48px
+                font-weight: 600
+    &__first-elipse
+        position: absolute
+        top: 55px
+        right: -73px
+    &__second-elipse
+        position: absolute
+        top: 375px
+        left: -83px
+.third-section
+    min-height: 640px
+    padding-top: 47px
+    background-color: #F0F0F0
+    overflow: hidden
+    position: relative
+    &__container
+        display: flex
+        flex-direction: row
+        justify-content: center
+        align-items: center
+        position: relative
+    &__buttons
+        display: flex
+        align-items: center
+    &__left
+        margin-right: 317px
+    &__text
+        max-width: 479px
+        font-size: 18px
+        margin-bottom: 15px
+        line-height: 22px
+    &__title
+        margin-bottom: 34px
+        line-height: 58px
+        position: relative
+        z-index: 1
+    &__first-elipse
+        position: absolute
+        top: -127px
+        right: -126px
+    &__second-elipse
+        position: absolute
+        top: 63px
+        left: 39px
+    &__third-elipse
+        position: absolute
+        top: 189px
+        left: -41px
+.title__hr_third-sec
+    position: absolute
+    top: 64px
+.title__hr_third-sec2
+    position: absolute
+    top: 68px
+.footer-section
+    position: relative
+    &__main-cont
+        display: flex
+        min-height: 250px
+        align-items: center
+        justify-content: flex-end
+    &__footer
+        margin-right: 71px
+    &__img
+        position: absolute
+        bottom: 0px
+        left: 0px
+
+
+
